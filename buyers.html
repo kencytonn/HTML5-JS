@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AMARA RIDGE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="validator.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>The Amara</h1> 
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#"><img alt="Brand" src="amara-brand.jpg"></a></div>
+<ul class="nav nav-pills">
+<li><a href="index.html">Home</a></li>
+<li><a href="buyers.html">Intrested Buyers</a></li>
+</ul>
+    </div>
+  </nav>
+
+  <form name="buyer_form" class="form-horizontal buyer_form" style="width: 70%; margin: 0 auto" onsubmit="return validate();">
+<fieldset>
+<legend><strong>Buyers Form</strong></legend>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="fname">FirstName</label>  
+  <div class="col-md-5">
+  <input id="fname" name="fname" type="text" placeholder="John" class="form-control input-md" /> 
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="lname">LastName</label>  
+  <div class="col-md-5">
+  <input id="lname" name="lname" type="text" placeholder="Doe" class="form-control input-md" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="id_no">ID Number</label>  
+  <div class="col-md-5">
+  <input id="id_no" name="id_no" type="text" placeholder="id/passport number" class="form-control input-md" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="bemail">Email</label>  
+  <div class="col-md-4">
+  <input id="bemail" name="bemail" type="email" placeholder="johndoe@email.com" class="form-control input-md" required>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">County</label>
+  <div class="col-md-5">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="Kisumu">Kisumu</option>
+      <option value="Nairobi">Nairobi</option>
+      <option value="Kakamega">Kakamega</option>
+      <option value="Kitui">Kitui</option>
+      <option value="Machakos">Machakos</option>
+      <option value="Mombasa">Mombasa</option>
+      <option value="Nyeri">Nyeri</option>
+    </select>
+  </div></div>
+<div class="form-group">
+  <label class="col-md-4 control-label" >Interested in?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="houses-0">
+      <input type="radio" name="houses" id="houses-0" value="Classic" checked="checked">
+      Classic Villa
+    </label>
+  </div>
+  <div class="radio">
+    <label for="houses-1"><input type="radio" name="houses" id="houses-1" value="Villa">
+     Contemporary Villa
+    </label>
+  </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="request"></label>
+  <div class="col-md-8">
+    <button type="submit" id="request" name="request" class="btn btn-primary">Request Quote</button>
+    <button type="button"id="re_back" name="re_back" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Go Back</button>
+  </div>
+</div>
+</fieldset>
+</form>
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><strong>ARE YOU SURE</strong></h4>
+        </div>
+        <div class="modal-body">
+          <p>Are you really sure you want to go back???</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<footer>
+    &#169; Copyright Amara Ridge 2015.
+</footer>
+
+</body>
+</html>

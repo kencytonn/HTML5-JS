@@ -1,0 +1,16 @@
+
+body{
+	background-color: rgba(186, 218, 173, 0.44);
+}
+.buyer_form{
+	padding-top: 10px;
+	width: 50%;
+	border: 1px solid #64854c;
+	box-shadow: 3px 3px 3px 3px #64854c;
+}
+ 
+iframe{
+	width:100%; 
+	height:280;
+}
+
